@@ -1,16 +1,21 @@
 # toDoApp.py
 
+"""
+A simple ToDoList app that allows the user to:
+1. Create a list.
+2. View tasks.
+3. And remove tasks by their number.
+"""
+
 tasks = []
 
 def add_task(task):
-    """
-    This function adds a new task.
-    """
+    """This function adds a new task. """
     tasks.append(task)
     print("Task added!")
 
-def show_tasks( ):
-    """ Function printing tasks """
+def show_tasks():
+    """Function printing tasks """
     if len(tasks) == 0:
         print("no tasks yet")
     else:
@@ -39,22 +44,28 @@ def remove_task(task_number):
         print("Invalid task number")
 
 def main():
+    """Run the main task menu loop. """
     while True:
-        print("1 Add Task")
-        print("2.Show Tasks")
-        print("3.Remove Task")
-        print("4- Exit")
-        ch = input("enter choice : ")
-        if ch=="1":
-            t = input("enter task : ")
-            addtask(t)
-        elif ch=="2":
-            show_tasks()
-        elif ch=="3":
-            n=int(input("enter task no to remove: "))
-            removeTask(n)   
-        elif ch=="4":
-            break
-        else:
-            print("wrong choice!!")
-main()
+        print("1. Add Task")
+        print("2. Show Tasks")
+        print("3. Remove Task")
+        print("4. Exit")
+        ch = int(input("Enter choice: "))
+
+        match ch:
+            case 1:
+                t = input("Enter task : ")
+                add_task(t)
+            case 2:
+                show_tasks()
+            case 3:
+                n = int(input("Enter task no to remove : "))
+                remove_task(n)
+            case 4:
+                break
+            case _:
+                print("Wrong choice!!")
+        print("--------------------")
+
+if __name__ == "__main__":
+    main()
