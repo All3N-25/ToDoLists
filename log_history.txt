@@ -1,0 +1,69 @@
+commit dd7f55653c0ef7ee228b55427994ac2a08b7fff2
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 19:32:24 2025 +0800
+
+    Made the code messaged more clearer, and added
+    try catch to detect user inputs.
+
+commit 8d72bc4159c1dd3774cd72401f21a9aa2610235c
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 19:20:33 2025 +0800
+
+    Fixed a few semi colons
+
+commit 95ce3a8d4bff3cdb627cdbb97ad1b569b1e3513b
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 16:30:18 2025 +0800
+
+    Fixed the main function.
+
+commit 2b7b61b72dd2b35ebd2293e6139a356c2b40dc46
+Merge: 4f3494e 97db336
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 16:13:58 2025 +0800
+
+    Merge pull request #3 from All3N-25/remove_task
+    
+    Updated the remove_task module
+
+commit 97db336667d1a839e82d8401a2c14cf31b3fe374
+Author: ai-weskr404 <pianomaster078@gmail.com>
+Date:   Mon Sep 22 16:01:05 2025 +0800
+
+    Updated the remove_task module
+
+commit 4f3494e3a331baa799723f82ce3a60f7a4bd0d25
+Merge: d8de28f 7d49b93
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 15:56:41 2025 +0800
+
+    Merge pull request #2 from All3N-25/show_task
+    
+    edited show_task
+
+commit d8de28f6d56a8b35325d4308ac6d0e0062c1fbd7
+Merge: 0c1d735 9cb2c3d
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 15:56:27 2025 +0800
+
+    Merge pull request #1 from All3N-25/add_task
+    
+    Fix add_task function. Addded indentation and Improved messages.
+
+commit 7d49b93ea3a9b7e6debabfc4485bc0a4df651a80
+Author: NJ <118595878+kisho20522@users.noreply.github.com>
+Date:   Mon Sep 22 15:37:32 2025 +0800
+
+    edited show_task
+
+commit 9cb2c3d45e513a49b6c50d8888ffc9392b2040be
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 15:21:40 2025 +0800
+
+    Fix add_task function. Addded indentation and Improved messages.
+
+commit 0c1d735f2ea04df6a487e72643e07f7abf269077
+Author: All3N-25 <all3ncalayan25@gmail.com>
+Date:   Mon Sep 22 14:03:11 2025 +0800
+
+    First Commit
