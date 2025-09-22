@@ -2,9 +2,12 @@
 
 tasks=[]
 
-def addtask(task) :
-  tasks.append(task)
-  print("task added!")
+def add_task(task):
+    """
+    This function adds a new task.
+    """
+    tasks.append(task)
+    print("Task added!")
 
 def showTasks( ):
     if len(tasks)==0 :
