@@ -17,9 +17,26 @@ def show_tasks( ):
         for i, task in enumerate(tasks):
             print(i + 1, ".", task)
 
-def removetask(tasknumber):
-    tasks.pop(tasknumber) 
-    print("task removed!!")
+def remove_task(task_number):
+    """
+    Removes a task from the tasks list based on the provided task number.
+    Args:
+        task_number (int): The index number of the task to remove (1-based indexing)
+    Returns:
+        None. Prints success or error message.
+    Raises:
+        None. Invalid task numbers are handled with error message.
+    Example:
+        >>> removeTask(1)  # Removes first task
+        task removed!!
+        >>> removeTask(99) # Invalid task number
+        Invalid task number
+    """
+    if 1 <= task_number <= len(tasks):
+        tasks.pop(task_number - 1)
+        print("task removed!!")
+    else:
+        print("Invalid task number")
 
 def main():
     while True:
@@ -35,7 +52,7 @@ def main():
             show_tasks()
         elif ch=="3":
             n=int(input("enter task no to remove: "))
-            removetask(n)   
+            removeTask(n)   
         elif ch=="4":
             break
         else:
