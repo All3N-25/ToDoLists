@@ -1,6 +1,6 @@
 # toDoApp.py
 
-tasks=[]
+tasks = []
 
 def add_task(task):
     """
@@ -9,12 +9,13 @@ def add_task(task):
     tasks.append(task)
     print("Task added!")
 
-def showTasks( ):
-    if len(tasks)==0 :
-      print("no tasks yet")
+def show_tasks( ):
+    """ Function printing tasks """
+    if len(tasks) == 0:
+        print("no tasks yet")
     else:
-     for i in range (len(tasks)):
-      print(i+1,".",tasks[i])
+        for i, task in enumerate(tasks):
+            print(i + 1, ".", task)
 
 def removetask(tasknumber):
     tasks.pop(tasknumber) 
@@ -31,12 +32,12 @@ def main():
             t = input("enter task : ")
             addtask(t)
         elif ch=="2":
-            showTasks()
+            show_tasks()
         elif ch=="3":
             n=int(input("enter task no to remove: "))
             removetask(n)   
         elif ch=="4":
-            break;
+            break
         else:
             print("wrong choice!!")
 main()
