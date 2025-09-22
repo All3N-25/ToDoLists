@@ -54,12 +54,12 @@ def main():
 
         match ch:
             case 1:
-                t = input("Enter task : ")
+                t = input("Enter task: ")
                 add_task(t)
             case 2:
                 show_tasks()
             case 3:
-                n = int(input("Enter task no to remove : "))
+                n = int(input("Enter task no to remove: "))
                 remove_task(n)
             case 4:
                 break
